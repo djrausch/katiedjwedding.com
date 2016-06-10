@@ -1,0 +1,60 @@
+/*
+Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.
+       Load paths:
+         
+        on line 3 of app.scss
+
+1: @import "vars";
+2: @import "custom";
+3: @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+4: 
+5: .btn-not-attending {
+6:   //@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+7:   @include button-variant(white, $purple, $purple);
+8: }
+
+Backtrace:
+app.scss:3
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/bin/scss:13:in `<top (required)>'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/bin/scss:23:in `load'
+/Users/djrausch/.rvm/gems/ruby-2.2.0/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.\A        Load paths:\A          \A         on line 3 of app.scss\A \A 1: @import \"vars\";\A 2: @import \"custom\";\A 3: @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\A 4: \A 5: .btn-not-attending {\A 6:   //@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);\A 7:   @include button-variant(white, $purple, $purple);\A 8: }"; }

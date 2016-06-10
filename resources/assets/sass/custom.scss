@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+.header-hero{
+  padding: 30px;
+  background: #ffffff;
+}
+.header-hero > img{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-hero-text{
+}
+.header-hero-text .title{
+  font-size: 40px;
+}
+
+.cursive{
+  font-family: 'Calligraffitti', cursive;
+}
+
+.oxygen{
+  font-family: 'Oxygen', sans-serif;
+}
+
+.shadow{
+  box-shadow: 5px 5px 15px #888888;
+}
+
+.navbar .nav{
+  float: none;
+  text-align: center;
+}
+.navbar .nav > li{
+  float: none;
+  display: inline-block;
+}
+
+.navbar .active{
+  font-weight: bold;
+}

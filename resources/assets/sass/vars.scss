@@ -1,0 +1,18 @@
+$purple: #4a3867;
+$purpleDarker: darken($purple, 20%);
+$purpleLight: lighten($purple, 20%);
+$bodyBackground: #f5f5f5;
+$attendingColor: #00A000;
+$notAttendingColor: #f52b22;
+
+//Bootstrap Vars
+$brand-primary: $purple;
+$input-border-focus: $purple;
+$body-bg: #fff;
+$navbar-default-bg: $bodyBackground;
+$navbar-default-link-color: $purple;
+$navbar-default-link-hover-color: $purpleLight;
+$navbar-default-link-active-color: $purpleDarker;
+$navbar-default-link-active-bg: $bodyBackground;
+$body-bg: $bodyBackground;
+$navbar-default-border: $bodyBackground;

@@ -1,0 +1,87 @@
+@import "vars";
+@import "custom";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.btn-not-attending {
+  //@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-variant(white, $purple, $purple);
+}
+
+.btn-attending {
+  @include button-variant(white, $purple, $purple);
+}
+
+.btn-attending:active,
+.btn-attending.active,
+.btn-attending.open > &.dropdown-toggle {
+  background-color: $attendingColor;
+  border-color: darken($attendingColor, 12%);
+  &:hover,
+  &:focus,
+  &.focus {
+    background-color: darken($attendingColor, 17%);
+    border-color: darken($attendingColor, 25%);
+  }
+}
+
+.btn-not-attending:active,
+.btn-not-attending.active,
+.btn-not-attending.open > &.dropdown-toggle {
+  background-color: $notAttendingColor;
+  border-color: darken($notAttendingColor, 12%);
+  &:hover,
+  &:focus,
+  &.focus {
+    background-color: darken($notAttendingColor, 17%);
+    border-color: darken($notAttendingColor, 25%);
+  }
+}
+
+/*
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus, {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}*/
